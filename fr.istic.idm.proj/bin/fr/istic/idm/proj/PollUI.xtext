@@ -1,0 +1,9 @@
+grammar fr.istic.idm.proj.PollUI with org.eclipse.xtext.common.Terminals
+
+generate pollUI "http://www.istic.fr/idm/proj/PollUI"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID '!';
